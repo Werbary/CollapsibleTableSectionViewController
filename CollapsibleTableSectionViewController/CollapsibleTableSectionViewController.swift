@@ -93,6 +93,10 @@ open class CollapsibleTableSectionViewController: UIViewController {
         _tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
     
+    open func collapsibleTableViewHeader(for tableView: UITableView) -> CollapsibleTableViewHeader {
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+        return header
+    }
 }
 
 //
@@ -135,11 +139,6 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
         header.section = section
         header.delegate = self
         
-        return header
-    }
-    
-    open func collapsibleTableViewHeader(for tableView: UITableView) -> CollapsibleTableViewHeader {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         return header
     }
     
