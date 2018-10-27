@@ -138,7 +138,7 @@ extension CollapsibleTableSectionViewController: UITableViewDataSource, UITableV
         return header
     }
     
-    public func collapsibleTableViewHeader(for tableView: UITableView) -> CollapsibleTableViewHeader {
+    open func collapsibleTableViewHeader(for tableView: UITableView) -> CollapsibleTableViewHeader {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
         return header
     }
