@@ -17,8 +17,8 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
     var delegate: CollapsibleTableViewHeaderDelegate?
     var section: Int = 0
     
-    let titleLabel = UILabel()
-    let arrowLabel = UILabel()
+    public let titleLabel = UILabel()
+    public let arrowLabel = UILabel()
     
     override public init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
