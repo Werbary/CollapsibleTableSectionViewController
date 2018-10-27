@@ -42,7 +42,7 @@ open class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         titleLabel.textColor = UIColor.white
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor, constant: -30).isActive  = true
         titleLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         
