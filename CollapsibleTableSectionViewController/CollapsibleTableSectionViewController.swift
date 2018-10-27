@@ -30,7 +30,7 @@ open class CollapsibleTableSectionViewController: UIViewController {
     
     public var delegate: CollapsibleTableSectionDelegate?
     
-    var tableView: UITableView! {
+    var collapsibleTableView: UITableView! {
         get {
             return _tableView   
         }
