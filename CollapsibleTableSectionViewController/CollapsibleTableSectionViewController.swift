@@ -30,6 +30,12 @@ open class CollapsibleTableSectionViewController: UIViewController {
     
     public var delegate: CollapsibleTableSectionDelegate?
     
+    var tableView: UITableView! {
+        get {
+            return _tableView   
+        }
+    }
+    
     fileprivate var _tableView: UITableView!
     fileprivate var _sectionsState = [Int : Bool]()
     
